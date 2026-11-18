@@ -13,7 +13,7 @@ class ProcesamientoDeComprasController(
     private val servicio: ProcesamientoDeComprasService
 ) {
 
-    @GetMapping("/procesar")
+    @GetMapping("/calcular-descuento")
     fun procesar(
         @RequestParam subtotal: Double,
         @RequestParam cupon: String
